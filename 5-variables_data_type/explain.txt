@@ -1,0 +1,4 @@
+
+
+accesing maps and array values: checkout 🗄 fetch_example.tf
+

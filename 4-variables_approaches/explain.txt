@@ -1,0 +1,41 @@
+create enviroment virabled in linux: (will stay only in the specific shell session)
+====================================================================================
+
+💲 export TF_VAR_instance_type="t2.nano"
+
+display the variable:
+💲 echo $TF_VAR_instance_type
+
+TF_VAR - shows us that this is terraform var
+
+
+In oder to keep the env variables inside the linux system ---> lynux nano ~/.bashrc
+====================================================================================
+We can add wariables directly here.
+If we configure vars in terminal in linux - It will stay only in the specific shell
+
+
+
+create enviroment virabled in windows: (will stay inside windows memory)
+=========================================================================
+
+💲 setx TF_VAR_instance_type="t2.nano"
+
+display the variable:
+💲 echo %TF_VAR_instance_type%
+
+
+Hirarchy
+==========
+1) command prompt (variables passed threw command prompt)
+2) .tfvars
+3) environemt variables
+4) defauld variables
+
+
+We can add data types to terraform
+===================================
+variable "instance_type" {
+    default = "t2.micro"
+    type = string 
+}
